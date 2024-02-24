@@ -12,12 +12,6 @@ button.onclick = function exec() {
 }
 
 
-// socket.on('msg_received',(data) => {
-//     let limsg = document.getElementById('li');
-//      limsg.innerText = data.msg;
-//      msgList.appendChild(limsg);
-// })     
-
 socket.on('msg_rcvd', (data) => {
     let limsg = document.createElement('li');
     limsg.innerText = data.msg;
